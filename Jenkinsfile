@@ -1,6 +1,11 @@
 pipeline {
     
-    agent any
+    agent {
+	    node {
+	      label 'my-defined-label'
+	      customWorkspace 'D:\HSJ\WorkSpace\maven'
+	    }
+	  }
 	
 
     stages {
