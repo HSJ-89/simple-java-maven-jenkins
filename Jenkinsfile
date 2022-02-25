@@ -1,10 +1,7 @@
 pipeline {
     
-    agent {
-	    node {
-	      label 'my-defined-label'
-	      customWorkspace 'D:\HSJ\WorkSpace\maven'
-	    }
+    agent any {
+	    
 	  }
 	
 
